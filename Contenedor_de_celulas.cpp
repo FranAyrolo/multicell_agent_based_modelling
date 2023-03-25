@@ -120,7 +120,7 @@ void Contenedor_de_Celulas::agregar_potenciales_cdc(Celula* celula, Celula* otra
 		double temp_a = -distancia; 
 		temp_a /= distancia_de_interaccion_max; 
 		temp_a += 1.0; 
-		temp_a *= temp_a; /
+		temp_a *= temp_a;
 
 		if(celula->tipo == otra_celula->tipo){
 		double adhesion_efectiva = sqrt( celula->fenotipo.mecanica.fuerza_de_adhesion_cc * otra_celula->fenotipo.mecanica.fuerza_de_adhesion_cc );
