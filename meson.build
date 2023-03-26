@@ -34,7 +34,7 @@ sources = ['Celula.cpp', 'Ciclo.cpp', 'Ciclo_Modelo.cpp',
 # Define the executable target
 executable('multicell_abm', sources,
   dependencies: [omp_dep],
-  include_directories: ['include'],
+  #include_directories: ['include'],
   #install: true,
   #install_dir: '/usr/local/bin',
   cpp_args: compile_args,
