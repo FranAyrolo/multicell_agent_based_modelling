@@ -3,7 +3,8 @@ CPU_VENDOR := $(shell grep vendor_id /proc/cpuinfo | head -n 1 | cut -d ' ' -f 2
 
 # Compiler
 ifeq ($(CPU_VENDOR),AuthenticAMD)
-    CXX = aocc
+#    CXX = aocc
+	CXX = g++
 else ifeq ($(CPU_VENDOR),GenuineIntel)
     CXX = icpc
 else
